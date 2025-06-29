@@ -1,0 +1,147 @@
+/* === Estilos específicos para index.html === */
+
+/* === Sección de header === */
+#headerIndex p {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--light-color);
+}
+
+#headerIndex h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#headerIndex p {
+    font-size: 1.2rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+/* === Menú personalizado (Lista-No-Ordenada) === */
+.Lista-No-Ordenada {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto 2rem;
+}
+
+.Lista-No-Ordenada li {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.Lista-No-Ordenada a {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: background-color var(--transition-speed);
+}
+
+.Lista-No-Ordenada a:hover {
+    background-color: var(--hover-color);
+}
+
+/* === Contenido principal === */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section#multimedia {
+    margin-top: 2rem;
+}
+
+section#multimedia h3 {
+    margin-top: 1rem;
+    color: var(--header-bg-color);
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+/* === Bloque de cita (blockquote) === */
+blockquote {
+    margin: 1rem 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--primary-color);
+    font-style: italic;
+    color: #555;
+}
+
+blockquote footer {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+/* === Aside - Sobre Mí === */
+aside#sobreMi {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    order: -1; /* Aparece primero en móvil */
+}
+
+aside#sobreMi h3 {
+    color: var(--header-bg-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+aside#sobreMi p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* === Definiciones (dl) === */
+dl#definiciones {
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+dt#definiciones {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dd#definiciones {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* === Media Queries específicos para index (opcional si necesitas ajustes extra) === */
+
+@media (max-width: 767px) {
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-container img {
+        max-width: 80%;
+    }
+}

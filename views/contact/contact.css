@@ -1,0 +1,9 @@
+/* Estilos específicos de contacto.html */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px var(--shadow-color);
+    padding: 2rem;
+}

@@ -1,0 +1,43 @@
+/* Estilos específicos de configuracion.html */
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+/* === Configuración específica de configuracion.html === */
+
+#tablaUsuarios table {
+    width: 100%;
+    overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+}
+
+#tablaUsuarios th,
+#tablaUsuarios td {
+    min-width: 150px; /* Ancho mínimo para evitar que se comprima demasiado */
+}
+
+/* === Responsive Design para configuracion.html === */
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Formulario a la izquierda, tabla a la derecha */
+        gap: 2rem;
+    }
+
+    #tablaUsuarios table {
+        overflow-x: auto; /* Mantener desplazamiento horizontal en escritorio */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        transform: scale(0.9);
+        transform-origin: top left;
+        width: 110%;
+        height: auto;
+    }
+}
