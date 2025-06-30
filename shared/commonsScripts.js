@@ -2,7 +2,7 @@ function manejarFormulario(formId, storageKey) {
     const form = document.getElementById(formId);
     if (!form) return;
 
-    console.log(`✅ Formulario "${formId}" encontrado`);
+    console.log(` Formulario "${formId}" encontrado`);
 
     form.addEventListener("submit", function(e) {
         e.preventDefault(); // Evita el envío tradicional
@@ -15,7 +15,7 @@ function manejarFormulario(formId, storageKey) {
             datos[key] = value;
         });
 
-        console.log('🔍 Datos recolectados:', datos);
+        console.log('Datos recolectados:', datos);
 
         // Enviar con fetch
         fetch('https://jsonplaceholder.typicode.com/posts ', {
@@ -40,7 +40,7 @@ function manejarFormulario(formId, storageKey) {
             form.reset();
         })
         .catch(error => {
-            console.error('❌ Error:', error);
+            console.error(' Error:', error);
             alert('Hubo un problema al enviar los datos.');
         });
     });
