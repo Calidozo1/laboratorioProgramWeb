@@ -41,3 +41,36 @@ fieldset {
         height: auto;
     }
 }
+
+input[type="text"],
+input[type="date"],
+input[type="color"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button,
+input[type="submit"] {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}

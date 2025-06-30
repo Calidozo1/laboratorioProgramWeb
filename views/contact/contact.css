@@ -7,3 +7,64 @@ form {
     box-shadow: 0 0 10px var(--shadow-color);
     padding: 2rem;
 }
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px var(--shadow-color);
+    box-sizing: border-box;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+form button,
+form input[type="submit"] {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: var(--button-hover);
+}

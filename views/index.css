@@ -1,6 +1,4 @@
-/* === Estilos específicos para index.html === */
 
-/* === Sección de header === */
 #headerIndex p {
     text-align: center;
     margin-top: 0.5rem;
@@ -18,7 +16,7 @@
     margin-bottom: 1rem;
 }
 
-/* === Menú personalizado (Lista-No-Ordenada) === */
+
 .Lista-No-Ordenada {
     display: flex;
     justify-content: center;
@@ -48,7 +46,7 @@
     background-color: var(--hover-color);
 }
 
-/* === Contenido principal === */
+
 main {
     width: 100%;
     max-width: 1200px;
@@ -77,7 +75,7 @@ section#multimedia h3 {
     border-radius: var(--border-radius);
 }
 
-/* === Bloque de cita (blockquote) === */
+
 blockquote {
     margin: 1rem 2rem;
     padding-left: 1rem;
@@ -92,14 +90,14 @@ blockquote footer {
     font-style: normal;
 }
 
-/* === Aside - Sobre Mí === */
+
 aside#sobreMi {
     background-color: #fff;
     padding: 1rem;
     margin: 2rem 1rem;
     border-radius: var(--border-radius);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    order: -1; /* Aparece primero en móvil */
+    order: -1; 
 }
 
 aside#sobreMi h3 {
@@ -113,7 +111,7 @@ aside#sobreMi p {
     font-weight: bold;
 }
 
-/* === Definiciones (dl) === */
+
 dl#definiciones {
     padding: 1rem;
     margin: 2rem auto;
@@ -133,7 +131,7 @@ dd#definiciones {
     margin-bottom: 0.5rem;
 }
 
-/* === Media Queries específicos para index (opcional si necesitas ajustes extra) === */
+
 
 @media (max-width: 767px) {
     .media-container {

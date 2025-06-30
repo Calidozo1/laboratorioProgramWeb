@@ -37,7 +37,7 @@
                         <a class="nav-link fs-5" href="../../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5" href="../../views/configuracion.html">Configuración</a>
+                        <a class="nav-link fs-5" href="../../views/config/configuracion.html">Configuración</a>
                     </li>
                 </ul>
             </div>
@@ -96,8 +96,7 @@
             </div>
         </div>
     </main>
-
-    
+  
     <footer id="footerContacto" class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p>© 2025 Mi Revista Digital. Todos los derechos reservados.</p>
@@ -108,5 +107,13 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="../../shared/commonsScripts.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        manejarFormulario("formularioContacto", "mensajesContacto");
+    });
+</script>
+
 </body>
 </html>

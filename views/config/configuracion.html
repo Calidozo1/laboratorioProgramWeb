@@ -34,29 +34,43 @@
         <body>
         <main>
     <section>
-        <legend>Configuración de perfil</legend>
-        <fieldset>
-            <p>Cambiar imágen de Perfil</p>
-            <label for="archivo">Subir archivo:</label><br><br>
-            <input type="file" id="archivo" name="archivo" accept=".png,.jpg"><br><br>
-            <label for="fecha">Fecha de nacimiento:</label><br><br>
-            <input type="date" id="fecha" name="fecha"> <br><br>
-            <label>Género:</label><br><br>
-            <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-            <label><input type="radio" name="genero" value="mujer"> Mujer</label><br><br>
-            <label for="color">Color Primario de la Página:</label><br><br>
-                <input type="color" id="color" name="color" value="#000000">   
-        </fieldset>
-        <legend>Cambiar Contraseña</legend>
-        <fieldset>
-            <label for="usuario">Coloque su Nombre de Usuario:</label>
-            <textarea id="usuario" name="usuario" rows="1" placeholder="Escribe tu Usuario aquí..."></textarea><br><br>
-            <label for="pwd">Antigua Contraseña:</label>
-            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-            <label for="pwd">Nueva Contraseña:</label>
-            <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-        </fieldset>    
-        <br><br>
+        <form id="formularioConfiguracion">
+            <fieldset>
+                <legend>Configuración de perfil</legend>
+
+                <label for="archivo">Subir imagen de Perfil:</label><br><br>
+                <input type="file" id="archivo" name="archivo" accept=".png,.jpg"><br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label><br><br>
+                <input type="date" id="fecha" name="fecha"><br><br>
+
+                <label>Género:</label><br><br>
+                <label><input type="radio" name="genero" value="hombre"> Hombre</label><br><br>
+                <label><input type="radio" name="genero" value="mujer"> Mujer</label><br><br>
+
+                <label for="color">Color Primario de la Página:</label><br><br>
+                <input type="color" id="color" name="color" value="#000000"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cambiar Contraseña</legend>
+
+                <label for="usuario">Nombre de Usuario:</label>
+                <textarea id="usuario" name="usuario" rows="1" placeholder="Escribe tu Nombre de Usuario aquí..."></textarea><br><br>
+
+                <label for="pwd">Contraseña Antigua:</label><br><br>
+                <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+                <label for="pwd2">Nueva Contraseña:</label><br><br>
+                <input type="password" id="pwd2" name="pwd2" minlength="8"><br><br>
+            </fieldset>
+
+            <div>
+                <button type="submit">Guardar cambios</button>
+            </div>
+        </form>
+    </section>
+</form>
     </section>
         <section id="tablaUsuarios">
             <table>
@@ -119,5 +133,11 @@
             </address>
           </footer>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="../../shared/commonsScripts.js"></script>
+          <script>
+          document.addEventListener("DOMContentLoaded", () => {
+          manejarFormulario("formularioConfiguracion", "datosConfig");
+          }); 
+          </script>
         </body>
 </html>
